@@ -37,20 +37,20 @@ StockMate helps small shop owners track product names, prices, quantities, and l
 
 ## Screenshots
 
-Add your screenshots to a `screenshots/` folder and update the paths below.
+ ## Empty State:
+<img width="375" height="452" alt="1" src="https://github.com/user-attachments/assets/dc73539d-b201-4bb8-bcca-f10d42ee8047" />
 
-| Empty State | Add Product Form | Product List |
-| --- | --- | --- |
-| ![Empty State](<img width="375" height="452" alt="1" src="https://github.com/user-attachments/assets/dc73539d-b201-4bb8-bcca-f10d42ee8047" />
-) | ![Add Product](<img width="376" height="452" alt="2" src="https://github.com/user-attachments/assets/3eecee60-239f-4ef0-a884-d0a6b6d5e985" />
-) | ![Product List](<img width="370" height="446" alt="Capture" src="https://github.com/user-attachments/assets/441fc9d2-9a73-4362-bc64-331af6b3c21b" />
-) |
+## Add Product Form 
+<img width="376" height="452" alt="2" src="https://github.com/user-attachments/assets/3eecee60-239f-4ef0-a884-d0a6b6d5e985" />
 
-| Low Stock Indicator | Search |
-| --- | --- |
-| ![Low Stock](<img width="370" height="446" alt="Capture" src="https://github.com/user-attachments/assets/508ea66b-0606-4714-b42b-9bd84e29a347" />
-) | ![Search](<img width="372" height="448" alt="3" src="https://github.com/user-attachments/assets/c7025ca4-f12d-459b-a08d-c9760eeba642" />)
- |
+## Product List 
+<img width="370" height="446" alt="Capture" src="https://github.com/user-attachments/assets/441fc9d2-9a73-4362-bc64-331af6b3c21b" />
+
+## Low Stock Indicator 
+<img width="370" height="446" alt="Capture" src="https://github.com/user-attachments/assets/508ea66b-0606-4714-b42b-9bd84e29a347" />
+
+## Search 
+<img width="372" height="448" alt="3" src="https://github.com/user-attachments/assets/c7025ca4-f12d-459b-a08d-c9760eeba642" />
 
 ---
 
@@ -141,5 +141,7 @@ flutter run
 ## Author
 
 **Fareeda Zarlal**
+
 Mobile App Development Intern, Stack & Scale Remote Internship 2026
-Submitted: 30 October 2026
+
+**Submitted: 30 October 2026**
