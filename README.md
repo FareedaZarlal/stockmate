@@ -1,33 +1,140 @@
-# StockMate – Small Business Inventory App
+# StockMate
 
-**Stack & Scale Remote Internship 2026 – Week 01**
+**A simple inventory app for small shop owners.**
 
-A simple and user-friendly mobile inventory application for small shopkeepers to manage products, track stock levels, and monitor low-stock items.
+Built with Flutter as the final project of the **Stack & Scale Remote Internship 2026** (Mobile App Development track).
+
+| Domain | Project Period | Delivery |
+| --- | --- | --- |
+| Mobile App Development | 26–30 October 2026 | Friday Final Project |
+
+---
+
+## Overview
+
+StockMate helps small shop owners track product names, prices, quantities, and low-stock items directly on their phone. It is a beginner-friendly app with local product management and clear, color-coded stock indicators. No account or internet connection is needed.
+
+**Target user:** Small shop owners who need a simple way to manage their stock.
+
+---
 
 ## Features
 
-- View list of products with name, price, quantity and stock status
-- Add new products with form validation
-- Edit existing product details
-- Delete products with confirmation
-- Increase / Decrease quantity with one tap
-- Low Stock and Out of Stock indicators
-- Search products by name or category
-- Inventory summary cards (Total Products, Low Stock, Total Value)
-- Local data persistence (data remains after app restart)
-- Clean and modern Material 3 UI
+| Feature | Status | Description |
+| --- | --- | --- |
+| Product List | Done | Shows name, price, quantity, and stock status |
+| Add Product | Done | Form with input validation |
+| Edit Product | Done | Update existing product details |
+| Delete Product | Done | Confirmation dialog before deletion |
+| Quantity +/- Controls | Done | Quick adjustments; prevents negative quantities |
+| Low / Out of Stock | Done | Color-coded badges (low-stock threshold = 5) |
+| Local Persistence | Done | `shared_preferences` + JSON serialization |
+| Search | Done | Search by product name or category |
+| Summary Cards | Done | Total Products, Low Stock, Total Value |
+| Empty State | Done | Friendly message when no products exist |
+
+---
+
+## Screenshots
+
+Add your screenshots to a `screenshots/` folder and update the paths below.
+
+| Empty State | Add Product Form | Product List |
+| --- | --- | --- |
+| ![Empty State](screenshots/empty_state.png) | ![Add Product](screenshots/add_product.png) | ![Product List](screenshots/product_list.png) |
+
+| Low Stock Indicator | Search |
+| --- | --- |
+| ![Low Stock](screenshots/low_stock.png) | ![Search](screenshots/search.png) |
+
+---
 
 ## Tech Stack
 
-- **Framework**: Flutter
-- **Language**: Dart
-- **State Management**: setState()
-- **Local Storage**: shared_preferences + JSON
+| Area | Technology |
+| --- | --- |
+| Framework | Flutter |
+| Language | Dart |
+| State Management | `setState()` |
+| Local Storage | `shared_preferences` + JSON serialization |
+| Architecture | Clean folder structure (models, services, screens, widgets) |
 
-## How to Run
+---
 
-1. Clone the repository
-2. Run `flutter pub get`
-3. Run the app:
-   ```bash
-   flutter run
+## Project Structure
+
+```
+lib/
+├── main.dart
+├── models/
+│   └── product.dart
+├── services/
+│   └── storage_service.dart
+├── screens/
+│   ├── home_screen.dart
+│   └── product_form_screen.dart
+└── widgets/
+    ├── product_card.dart
+    ├── summary_cards.dart
+    └── empty_state.dart
+```
+
+| File | Purpose |
+| --- | --- |
+| `main.dart` | App entry point |
+| `models/product.dart` | Product data model with JSON conversion |
+| `services/storage_service.dart` | Saves and loads products via `shared_preferences` |
+| `screens/home_screen.dart` | Product list, search, and summary cards |
+| `screens/product_form_screen.dart` | Add and edit product form with validation |
+| `widgets/product_card.dart` | Product tile with stock badge and quantity controls |
+| `widgets/summary_cards.dart` | Total Products, Low Stock, and Total Value cards |
+| `widgets/empty_state.dart` | Message shown when there are no products |
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- [Flutter SDK](https://docs.flutter.dev/get-started/install)
+- An emulator, a physical device, or Chrome (for Flutter Web)
+
+### Run the project
+
+```bash
+# 1. Clone the repository
+git clone <your-repository-url>
+cd stockmate
+
+# 2. Install dependencies
+flutter pub get
+
+# 3. Run the app
+flutter run
+```
+
+---
+
+## Known Limitations
+
+- **Flutter Web:** Data persists within the same browser session. Fully closing and reopening the browser may clear data during development (normal Flutter Web behavior). On a real mobile device, data persists properly.
+- **No cloud sync:** There is no cloud synchronization or multi-device support.
+
+---
+
+## What I Learned
+
+- Building multiple screens and reusable widgets in Flutter
+- Managing UI state with `setState()`
+- Creating and validating forms
+- Implementing local data persistence with `shared_preferences`
+- Designing a clean and user-friendly interface
+- Handling empty states and user feedback (SnackBars, confirmation dialogs)
+
+---
+
+## Author
+
+**Fareeda Zarlal**
+Mobile App Development Intern, Stack & Scale Remote Internship 2026
+Submitted: 30 October 2026
